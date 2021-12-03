@@ -1,0 +1,239 @@
+@charset "utf-8";
+
+/*--------------------
+共通部分
+---------------------*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
+/* border: 1px solid red;*/
+}
+
+body {
+  background-color: #fff;
+  font-size: 100%;
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  color: #6C5E5B;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #A29997;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.flex {
+  display: flex;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+/*- モバイル版 共通部分 -*/
+
+@media (max-width: 559px) {
+  .pc {
+    display: none;
+  }
+
+}
+
+
+/*--------------------
+HEADER
+---------------------*/
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 10%;
+  margin: 0 auto;
+}
+
+nav {
+  width: 30%;
+}
+
+header nav ul {
+  width: 100%;
+  display: flex;
+}
+
+.gnavi {
+  font-size: 1.5rem;
+}
+
+.gnavi li {
+  margin-right: 10%;
+}
+
+.gnavi li:last-child {
+  margin-right: 0;
+}
+
+
+/*- モバイル版 HEADER -*/
+
+
+
+@media (max-width: 559px) {
+  
+  h1 {
+    margin: 0 auto;
+  }
+
+  nav {
+  display: none;
+  }
+
+}
+
+
+
+/*--------------------
+button
+---------------------*/
+
+.button {
+  color: #fff;
+  background-color: #6C5E5B;
+  border: 1px solid #A29997;
+  padding: 10px 30px;
+}
+
+.button:hover {
+  color: #A29997;
+  background-color: #fff;
+}
+
+
+/*--------------------
+top
+---------------------*/
+
+.top {
+  text-align: center;
+  margin-bottom: 100px;
+} 
+
+.hero img {
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+/*- モバイル版 top -*/
+
+@media (max-width: 559px) {
+
+.top {
+  margin-top: 50px;
+} 
+
+.top h1 {
+  font-size: 1.5rem;
+}
+  
+}
+
+
+/*--------------------
+main
+---------------------*/
+
+.container {
+margin: 10% 20%;
+}
+
+
+h2 {
+  font-size: 2rem;
+}
+
+
+/*--------------------
+profile
+---------------------*/
+
+.profile_box__1 {
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.ito_picture {
+  max-width: 200px;
+  margin-right: 5%;
+}
+
+/*- モバイル版 profile -*/
+
+@media (max-width: 559px) {
+  .profile_box__1 {
+  display: block;
+  }
+}
+
+
+/*--------------------
+works
+---------------------*/
+
+.works_box {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.works_box {
+  padding-left: 0;
+}
+
+.works_box li {
+  width: 45%;
+  margin-bottom: 50px;
+}
+
+/*- モバイル版 works -*/
+
+@media (max-width: 559px) {
+  .works_box li {
+    width: 100%;
+  }
+  
+}
+
+
+/*--------------------
+footer
+---------------------*/
+
+footer {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer_logo {
+  max-width: 110px;
+  margin: 50px auto;
+}
+
